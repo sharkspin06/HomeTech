@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HomeTech SG Scam Check</title>
+  <meta name="description" content="Before you click, pay, or reply, check first. Free scam message and link checker for Singapore residents, with official scam info and home visit help.">
+  <meta name="theme-color" content="#0b3b4f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="HomeTech SG Scam Check, home">
+        <svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 2 4 7v8c0 7.5 5.1 13.4 12 15 6.9-1.6 12-7.5 12-15V7L16 2Z" fill="currentColor"/>
+          <path d="m10.5 16 4 4 7-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-text">HomeTech SG<small>Scam Check &amp; Digital Safety</small></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="nav-toggle-bars" aria-hidden="true"></span>Menu
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#check-message">Check a message</a></li>
+          <li><a href="#check-link">Check a link</a></li>
+          <li><a href="#scam-info">Scam info</a></li>
+          <li><a href="#home-visit">Home visit</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <div class="text-size" role="group" aria-label="Text size">
+          <button type="button" data-size="1" aria-pressed="true" title="Normal text">A</button>
+          <button type="button" data-size="1.15" aria-pressed="false" title="Larger text">A+</button>
+          <button type="button" data-size="1.3" aria-pressed="false" title="Largest text">A++</button>
+        </div>
+        <label class="lang-select">
+          <span class="visually-hidden">Language</span>
+          <select aria-label="Language">
+            <option value="en" selected>English</option>
+            <option value="zh" disabled>中文 (coming soon)</option>
+            <option value="ms" disabled>Melayu (coming soon)</option>
+            <option value="ta" disabled>தமிழ் (coming soon)</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Free scam check for Singapore residents</p>
+          <h1>Before you click, pay, or reply, <span class="hl">check first.</span></h1>
+          <p class="lead">Got a strange SMS, WhatsApp or email? Paste it here. We'll tell you the warning signs in plain words.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#check-message">Check a message</a>
+            <a class="btn btn-secondary btn-lg" href="#check-link">Check a link</a>
+          </div>
+          <ul class="trust-list">
+            <li><span aria-hidden="true">✓</span> Checks run on your phone, nothing is sent or saved</li>
+            <li><span aria-hidden="true">✓</span> We never ask for passwords or OTPs</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <canvas id="hero-canvas"></canvas>
+          <div class="hero-fallback">
+            <svg viewBox="0 0 200 220">
+              <path d="M100 10 20 42v52c0 50 34 89 80 102 46-13 80-52 80-102V42L100 10Z" fill="#0f766e"/>
+              <path d="m62 108 26 26 52-58" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK RULES -->
+    <section class="rules" aria-labelledby="rules-title">
+      <div class="container">
+        <h2 id="rules-title" class="visually-hidden">Three quick rules</h2>
+        <ol class="rule-cards">
+          <li class="tilt-card">
+            <span class="rule-num">1</span>
+            <h3>Stop</h3>
+            <p>Don't rush. Scammers want you to act fast. Real banks and government agencies give you time.</p>
+          </li>
+          <li class="tilt-card">
+            <span class="rule-num">2</span>
+            <h3>Check</h3>
+            <p>Use the checkers below, or call the ScamShield Helpline <a href="tel:1799"><strong>1799</strong></a>.</p>
+          </li>
+          <li class="tilt-card">
+            <span class="rule-num">3</span>
+            <h3>Never share</h3>
+            <p>Never give your OTP, password, Singpass or bank PIN to anyone, even if they say they are police or bank staff.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- MESSAGE CHECKER -->
+    <section class="section" id="check-message" aria-labelledby="msg-title">
+      <div class="container narrow">
+        <header class="section-head">
+          <p class="eyebrow">Step 1</p>
+          <h2 id="msg-title">Check a message</h2>
+          <p>Copy the SMS, WhatsApp, Telegram or email message and paste it below.</p>
+        </header>
+
+        <div class="checker-card">
+          <div class="notice notice-info" role="note">
+            <strong>Before you paste:</strong> remove any OTP code, password or bank card number. We don't need them, and you should never share them.
+          </div>
+
+          <form id="message-form" novalidate>
+            <label for="message-input" class="field-label">Paste the message here</label>
+            <textarea id="message-input" rows="7" placeholder="Example: Your parcel could not be delivered. Pay $1.99 redelivery fee within 24 hours: http://..." autocomplete="off" spellcheck="false"></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg">Check this message</button>
+              <button type="button" class="btn btn-ghost" id="message-clear">Clear</button>
+              <button type="button" class="btn btn-ghost" id="message-example">Try an example</button>
+            </div>
+          </form>
+
+          <div id="message-result" class="result" aria-live="polite" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINK CHECKER -->
+    <section class="section section-alt" id="check-link" aria-labelledby="link-title">
+      <div class="container narrow">
+        <header class="section-head">
+          <p class="eyebrow">Step 2</p>
+          <h2 id="link-title">Check a link</h2>
+          <p>Not sure about a website link? Paste it here. <strong>We do not open the link</strong>, so checking is safe.</p>
+        </header>
+
+        <div class="checker-card">
+          <form id="link-form" novalidate>
+            <label for="link-input" class="field-label">Paste the link here</label>
+            <input id="link-input" type="text" inputmode="url" placeholder="Example: https://dbs-sg-secure-login.top/verify" autocomplete="off" spellcheck="false">
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg">Check this link</button>
+              <button type="button" class="btn btn-ghost" id="link-clear">Clear</button>
+              <button type="button" class="btn btn-ghost" id="link-example">Try an example</button>
+            </div>
+          </form>
+
+          <div id="link-result" class="result" aria-live="polite" hidden></div>
+        </div>
+
+        <p class="fineprint">These checkers look for common warning signs. A "low risk" result does not guarantee a message or link is safe. If in doubt, call <a href="tel:1799">1799</a> or ask a family member you trust.</p>
+      </div>
+    </section>
+
+    <!-- SCAM INFO -->
+    <section class="section" id="scam-info" aria-labelledby="info-title">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow">Know the signs</p>
+          <h2 id="info-title">Common scams in Singapore</h2>
+          <p>Tap a scam type to see how it works and what to do.</p>
+        </header>
+
+        <div class="scam-grid" id="scam-grid"></div>
+
+        <div class="help-panel">
+          <h3>Need help now? Official Singapore contacts</h3>
+          <ul class="help-list">
+            <li class="help-item">
+              <a href="tel:1799" class="help-link">
+                <span class="help-number">1799</span>
+                <span class="help-label">ScamShield Helpline<br><small>Ask if something is a scam</small></span>
+              </a>
+            </li>
+            <li class="help-item">
+              <a href="tel:999" class="help-link urgent">
+                <span class="help-number">999</span>
+                <span class="help-label">Police emergency<br><small>If you are in danger or money is being taken now</small></span>
+              </a>
+            </li>
+            <li class="help-item">
+              <a href="tel:18002550000" class="help-link">
+                <span class="help-number">1800 255 0000</span>
+                <span class="help-label">Police Hotline<br><small>Give information on a scam</small></span>
+              </a>
+            </li>
+          </ul>
+          <div class="official-links">
+            <a href="https://www.scamshield.gov.sg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">ScamShield website ↗</a>
+            <a href="https://eservices.police.gov.sg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Report to Police online ↗</a>
+          </div>
+          <p class="fineprint"><strong>Lost money?</strong> Call your bank's 24-hour hotline first (number on the back of your card) and ask them to freeze your account. Then make a police report.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME VISIT -->
+    <section class="section section-alt" id="home-visit" aria-labelledby="visit-title">
+      <div class="container visit-inner">
+        <div class="visit-copy">
+          <p class="eyebrow">Friendly help at home</p>
+          <h2 id="visit-title">Book a home visit</h2>
+          <p>A HomeTech helper can visit you to:</p>
+          <ul class="tick-list">
+            <li>Set up the ScamShield app and scam filters on your phone</li>
+            <li>Turn on safety settings for WhatsApp, banking apps and Singpass</li>
+            <li>Show you how to spot scam messages and calls</li>
+            <li>Help family members set up safety for parents and grandparents</li>
+          </ul>
+          <div class="notice notice-warn" role="note">
+            <strong>Our helpers will never</strong> ask for your passwords, OTPs, PINs, or ask you to transfer money.
+          </div>
+        </div>
+
+        <form class="checker-card visit-form" id="visit-form" novalidate>
+          <h3>Send a booking request on WhatsApp</h3>
+          <p class="fineprint">This form doesn't save anything. It opens WhatsApp with your message ready, and you press Send.</p>
+
+          <label for="visit-name" class="field-label">Your name</label>
+          <input id="visit-name" type="text" autocomplete="given-name" required>
+
+          <label for="visit-area" class="field-label">Area (e.g. Tampines, Jurong West)</label>
+          <input id="visit-area" type="text" required>
+
+          <label for="visit-help" class="field-label">What do you need help with?</label>
+          <select id="visit-help">
+            <option>Phone safety setup</option>
+            <option>Check messages / scam questions</option>
+            <option>Banking app safety</option>
+            <option>Set up phone for a parent or grandparent</option>
+            <option>Something else</option>
+          </select>
+
+          <label for="visit-time" class="field-label">Preferred time</label>
+          <select id="visit-time">
+            <option>Weekday morning</option>
+            <option>Weekday afternoon</option>
+            <option>Weekday evening</option>
+            <option>Weekend</option>
+          </select>
+
+          <p id="visit-error" class="form-error" role="alert" hidden></p>
+          <button type="submit" class="btn btn-whatsapp btn-lg btn-block">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="wa-icon"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
+            Book on WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">HomeTech SG</p>
+        <p>Scam Check &amp; Digital Safety for Singapore residents.</p>
+      </div>
+      <div>
+        <p><strong>Your privacy</strong></p>
+        <p>Messages and links you check stay on your device. We don't store them, and we don't use tracking cookies.</p>
+      </div>
+      <div>
+        <p><strong>Important</strong></p>
+        <p>HomeTech SG is not a government agency. For official advice, visit <a href="https://www.scamshield.gov.sg" target="_blank" rel="noopener noreferrer">ScamShield</a> or call 1799.</p>
+      </div>
+    </div>
+    <p class="container copyright">&copy; <span id="year"></span> HomeTech SG</p>
+  </footer>
+
+  <a class="wa-float" id="wa-float" href="#home-visit" aria-label="Book a home visit on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
+    <span>Book help</span>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/scam-data.js"></script>
+  <script src="js/checkers.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js" defer></script>
+  <script src="js/hero3d.js" defer></script>
+</body>
+</html>
